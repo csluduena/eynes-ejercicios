@@ -19,5 +19,14 @@ def simple_list():
     return persons
 
 
-def sort_list():
-    pass
+def sort_list(dicts):
+    """
+    Ordena una lista de diccionarios por edad en orden ascendente.
+
+    Args:
+        dicts: Lista de diccionarios con clave 'age'
+
+    Returns:
+        Lista ordenada por edad (ascendente)
+    """
+    return sorted(dicts, key=lambda person: person["age"])
